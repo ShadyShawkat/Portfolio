@@ -2,7 +2,9 @@
 
 # Project Name
 
-> One paragraph statement about the project.
+Portfolio
+
+> This project represents my personal portfolio and will feature my personal info my most recent work and projects.
 
 ![screenshot](./app_screenshot.png)
 
@@ -10,22 +12,20 @@ Additional description about the project and its features.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
+[Live Demo Link](https://shadyshawkat.github.io/Portfolio/)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
+
+1- Navigate to the button on the top right green "code" button.
+2- In the drop down menu choose "Download Zip".
+3- After extracting the files, you'll have my project on your local machine.
 
 ### Prerequisites
 
@@ -39,37 +39,17 @@ To get a local copy up and running follow these simple example steps.
 
 ### Deployment
 
-
-
 ## Authors
 
-👤 **Author1**
+👤 **Shady Shawkat**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
+- GitHub: [@shadyshawkat](https://github.com/ShadyShawkat)
+- Twitter: [@shadyshawkat](https://twitter.com/ShadyShawkat3)
+- LinkedIn: [shadyshawkat](https://www.linkedin.com/in/shady-shawkat/)
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
