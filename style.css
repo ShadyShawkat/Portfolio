@@ -135,7 +135,7 @@ nav .logo:hover {
   padding: 0 24px 120px 24px;
 }
 
-.projects-section h2 {
+.projects-section > h2 {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
@@ -159,8 +159,8 @@ nav .logo:hover {
   height: 568px;
 }
 
-.most-recent-project h3 {
-  font-family: 'Crete Round';
+.most-recent-project > h3 {
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -168,7 +168,7 @@ nav .logo:hover {
   color: #091e42;
 }
 
-.most-recent-project p {
+.most-recent-project > p {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -230,7 +230,7 @@ nav .logo:hover {
 }
 
 .card-title {
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', serif;
   font-weight: normal;
   font-size: 32px;
   line-height: 44px;
@@ -271,7 +271,7 @@ nav .logo:hover {
 }
 
 .about-section h2 {
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', serif;
   color: #ff6b00;
   font-size: 72px;
   line-height: 88px;
@@ -299,10 +299,9 @@ footer {
 .footer-content ul {
   list-style: none;
   margin-bottom: 30px;
-  
 }
 
-.footer-content ul li{
+.footer-content ul li {
   font-family: 'Inter', sans-serif;
   font-size: 22px;
   line-height: 43px;
