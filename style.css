@@ -19,6 +19,21 @@
   color: #fff;
 }
 
+.btn:hover {
+  color: #f55800;
+  background-color: #fff5e1;
+}
+
+.btn:active {
+  color: #f4f1f0;
+  background-color: #e05304;
+}
+
+.btn:disabled {
+  color: #5b5957;
+  background-color: #f4f1f0;
+}
+
 .txt-white {
   font-family: 'Poppins', sans-serif;
   color: #fff;
@@ -197,21 +212,6 @@ nav .logo:hover {
 
 .most-recent-project button {
   width: 40%;
-}
-
-.my-btn:hover {
-  color: #f55800;
-  background-color: #fff5e1;
-}
-
-.my-btn:active {
-  color: #f4f1f0;
-  background-color: #e05304;
-}
-
-.my-btn:disabled {
-  color: #5b5957;
-  background-color: #f4f1f0;
 }
 
 /* Project card */
