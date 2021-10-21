@@ -42,6 +42,10 @@
   letter-spacing: 0.03em;
 }
 
+ul {
+  list-style: none;
+}
+
 /* Navbar */
 nav {
   background-color: #3c3a39;
@@ -123,7 +127,6 @@ nav .logo:hover {
 .social-media-icons {
   margin-top: 22px;
   display: flex;
-  list-style: none;
 }
 
 .social-media-icons a {
@@ -192,7 +195,6 @@ nav .logo:hover {
 }
 
 .technologies-used-list {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   grid-gap: 12px;
@@ -238,7 +240,6 @@ nav .logo:hover {
 }
 
 .card-technologies {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   grid-gap: 12px;
@@ -287,28 +288,22 @@ nav .logo:hover {
 
 .partial-about-me-bg-img {
   position: absolute;
-  top: 59%;
+  top: 18%;
   right: 0;
 }
 
-/* Footer */
-footer {
-  background-color: #1c1a19;
+.about-me-content {
+  margin: 165px 24px 0 24px;
+  padding: 120px 0;
+  border-top: 1px solid #fff;
   text-align: center;
 }
 
-.footer-content {
-  margin: 0 24px;
-  padding: 120px 0;
-  border-top: 1px solid #fff;
-}
-
-.footer-content ul {
-  list-style: none;
+.about-me-content ul {
   margin-bottom: 30px;
 }
 
-.footer-content ul li {
+.about-me-content ul li {
   font-family: 'Inter', sans-serif;
   font-size: 22px;
   line-height: 43px;
@@ -316,7 +311,7 @@ footer {
   margin: 15px 0;
 }
 
-.footer-content h1 {
+.about-me-content h1 {
   font-family: 'Inter', sans-serif;
   color: #fff;
   font-weight: bold;
@@ -325,7 +320,7 @@ footer {
   margin-left: -40px;
 }
 
-.footer-content h1 span {
+.about-me-content h1 span {
   color: #ff6b00;
 }
 
