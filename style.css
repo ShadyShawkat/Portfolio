@@ -294,7 +294,7 @@ nav .logo:hover {
 
 .about-me-content {
   margin: 165px 24px 0 24px;
-  padding: 120px 0;
+  padding-top: 120px;
   border-top: 1px solid #fff;
   text-align: center;
 }
