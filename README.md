@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Portfolio
 
-Portfolio
+
 
 > This project represents my personal portfolio and will feature my personal info my most recent work and projects.
 
