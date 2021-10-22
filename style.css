@@ -5,6 +5,47 @@
   padding: 0;
 }
 
+/* general styles */
+.btn {
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  background-color: #ff6b00;
+  letter-spacing: 0.03em;
+  border: none;
+  text-align: center;
+  color: #fff;
+}
+
+.btn:hover {
+  color: #f55800;
+  background-color: #fff5e1;
+}
+
+.btn:active {
+  color: #f4f1f0;
+  background-color: #e05304;
+}
+
+.btn:disabled {
+  color: #5b5957;
+  background-color: #f4f1f0;
+}
+
+.txt-white {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+ul {
+  list-style: none;
+}
+
 /* Navbar */
 nav {
   background-color: #3c3a39;
@@ -83,12 +124,6 @@ nav .logo:hover {
   margin: 12px 0;
 }
 
-.describtion {
-  font-family: 'Poppins', sans-serif;
-  color: #fff;
-  font-size: 16px;
-}
-
 .social-media-icons {
   margin-top: 22px;
   display: flex;
@@ -105,6 +140,188 @@ nav .logo:hover {
   right: 0%;
   top: 39%;
   -webkit-user-drag: none;
+}
+
+/* Projects section */
+
+/* Most recent project */
+.projects-section {
+  margin-top: 120px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px 120px 24px;
+}
+
+.projects-section > h2 {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+  color: #1c1a19;
+  border-bottom: 1px solid #212121;
+  padding-bottom: 24px;
+  margin-bottom: 80px;
+}
+
+.projects-cards {
+  display: grid;
+  grid-row-gap: 24px;
+}
+
+.most-recent-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 568px;
+}
+
+.most-recent-project > h3 {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+}
+
+.most-recent-project > p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+  font-weight: 500;
+}
+
+.technologies-used-list {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 12px;
+  margin: 12px 0;
+}
+
+.technologies-used-list li {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+  text-align: center;
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+}
+
+.most-recent-project button {
+  width: 40%;
+}
+
+/* Project card */
+.project-card {
+  background-image: url('images/Img-placeholder.png');
+  height: 386px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 16px;
+}
+
+.card-title {
+  font-family: 'Crete Round', serif;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.card-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 12px;
+  margin: 12px 0 22px 0;
+}
+
+.card-technologies li {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 10px 12px;
+  background-color: #ffffff3d;
+}
+
+.project-card button {
+  width: 100%;
+  height: 48px;
+}
+
+/* About me section */
+.about-section {
+  background-color: #1c1a19;
+  padding: 120px 24px 200px 24px;
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 24px;
+  position: relative;
+}
+
+.about-section h2 {
+  font-family: 'Crete Round', serif;
+  color: #ff6b00;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.about-section button {
+  width: 50%;
+}
+
+.partial-about-me-bg-img {
+  position: absolute;
+  top: 18%;
+  right: 0;
+}
+
+.about-me-content {
+  margin: 165px 24px 0 24px;
+  padding-top: 120px;
+  border-top: 1px solid #fff;
+  text-align: center;
+}
+
+.about-me-content ul {
+  margin-bottom: 30px;
+}
+
+.about-me-content ul li {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  line-height: 43px;
+  color: #fff;
+  margin: 15px 0;
+}
+
+.about-me-content h1 {
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  margin-left: -40px;
+}
+
+.about-me-content h1 span {
+  color: #ff6b00;
 }
 
 @media all and (max-width: 370px) {
