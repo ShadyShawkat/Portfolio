@@ -218,7 +218,11 @@
           contact me.
         </p>
         <button type="button" class="btn">Get My Resume</button>
-        <img class="partial-about-me-bg-img" src="images/illustration-about-me-mobile.png" alt="Partial about me bg image">
+        <img
+          class="partial-about-me-bg-img"
+          src="images/illustration-about-me-mobile.png"
+          alt="Partial about me bg image"
+        />
 
         <ul class="about-me-content">
           <li class="languages">
@@ -251,8 +255,28 @@
             </ul>
           </li>
         </ul>
-
       </section>
     </main>
+
+    <footer>
+      <h2>
+        I'm always interested in hearing about new projects, so if you'd like to
+        chat please get in touch.
+      </h2>
+
+      <form action="https://formspree.io/f/xqkwonpa" method="POST">
+        <ul class="form-fields">
+          <li>
+            <input type="text" name="name" minlength="3" maxlength="30" required placeholder="Full name">
+          </li>
+          <li>
+            <input type="email" name="email" placeholder="Email address">
+          </li>
+          <li>
+            <textarea name="message" maxlength="500" placeholder="Enter text here"></textarea>
+          </li>
+        </ul>
+      </form>
+    </footer>
   </body>
 </html>
