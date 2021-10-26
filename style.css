@@ -8,7 +8,7 @@
 /* general styles */
 .btn {
   padding: 12px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
@@ -35,7 +35,7 @@
 }
 
 .txt-white {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fff;
   font-size: 16px;
   line-height: 24px;
@@ -60,7 +60,8 @@ nav {
 
 nav .logo {
   color: #fff;
-  font-family: BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: BlinkMacSystemFont, "Segoe UI", "Roboto", Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
   text-decoration: none;
@@ -105,7 +106,7 @@ nav .logo:hover {
 }
 
 .header-title {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 56px;
@@ -115,7 +116,7 @@ nav .logo:hover {
 }
 
 .primary-text {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -154,7 +155,7 @@ nav .logo:hover {
 }
 
 .projects-section > h2 {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
@@ -178,7 +179,7 @@ nav .logo:hover {
 }
 
 .most-recent-project > h3 {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -187,7 +188,7 @@ nav .logo:hover {
 }
 
 .most-recent-project > p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #091e42;
@@ -202,7 +203,7 @@ nav .logo:hover {
   float: left;
   margin-right: 15px;
   margin-bottom: 10px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 15px;
   line-height: 20px;
@@ -226,7 +227,7 @@ nav .logo:hover {
 
 /* Project card */
 .project-card {
-  background-image: url('images/Img-placeholder.png');
+  background-image: url("images/Img-placeholder.png");
   height: 386px;
   display: flex;
   flex-direction: column;
@@ -240,7 +241,7 @@ nav .logo:hover {
 }
 
 .card-title {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-weight: normal;
   font-size: 32px;
   line-height: 44px;
@@ -254,7 +255,7 @@ nav .logo:hover {
 .card-technologies li {
   float: left;
   margin-right: 20px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
@@ -288,7 +289,7 @@ nav .logo:hover {
 }
 
 .about-section h2 {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   color: #ff6b00;
   font-size: 72px;
   line-height: 88px;
@@ -319,7 +320,7 @@ nav .logo:hover {
 }
 
 .about-me-content ul li {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 22px;
   line-height: 43px;
   color: #fff;
@@ -327,7 +328,7 @@ nav .logo:hover {
 }
 
 .about-me-content h1 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #fff;
   font-weight: bold;
   font-size: 32px;
@@ -345,7 +346,7 @@ footer {
 }
 
 footer h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #172b4d;
   text-align: center;
   font-weight: bold;
@@ -354,7 +355,14 @@ footer h2 {
   padding: 0 24px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .form-fields {
+  width: 100%;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -383,10 +391,40 @@ footer h2 {
   min-height: 100px;
   min-width: 100%;
   max-width: 100%;
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  border: none;
 }
 
 .form-fields textarea::placeholder {
   color: #3c3a39;
+}
+
+form button {
+  margin-top: 24px;
+}
+
+.social-links {
+  padding-top: 25px;
+  padding-bottom: 36px;
+  margin-top: 124px;
+  border-top: 1px solid #dfe1e6;
+}
+
+.footer-social-media-icons {
+  display: flex;
+  justify-content: center;
+  grid-row-gap: 20px;
+}
+
+.footer-social-media-icons li {
+  margin: 0 10px;
+}
+
+.footer-social-media-icons img {
+  filter: invert(85%);
 }
 
 @media all and (max-width: 370px) {
