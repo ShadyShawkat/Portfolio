@@ -8,7 +8,7 @@
 /* general styles */
 .btn {
   padding: 12px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
@@ -35,7 +35,7 @@
 }
 
 .txt-white {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fff;
   font-size: 16px;
   line-height: 24px;
@@ -60,7 +60,16 @@ nav {
 
 nav .logo {
   color: #fff;
-  font-family: BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-style: normal;
   font-weight: bold;
   text-decoration: none;
@@ -105,7 +114,7 @@ nav .logo:hover {
 }
 
 .header-title {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 56px;
@@ -115,7 +124,7 @@ nav .logo:hover {
 }
 
 .primary-text {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -154,7 +163,7 @@ nav .logo:hover {
 }
 
 .projects-section > h2 {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
@@ -178,7 +187,7 @@ nav .logo:hover {
 }
 
 .most-recent-project > h3 {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -187,7 +196,7 @@ nav .logo:hover {
 }
 
 .most-recent-project > p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #091e42;
@@ -195,14 +204,14 @@ nav .logo:hover {
 }
 
 .technologies-used-list {
-  display: flex;
-  flex-wrap: wrap;
-  grid-gap: 12px;
   margin: 12px 0;
 }
 
 .technologies-used-list li {
-  font-family: 'Inter', sans-serif;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 15px;
   line-height: 20px;
@@ -212,13 +221,21 @@ nav .logo:hover {
   border: 1px solid #8993a4;
 }
 
+.technologies-used-list li::after {
+  clear: both;
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+}
+
 .most-recent-project button {
   width: 40%;
 }
 
 /* Project card */
 .project-card {
-  background-image: url('images/Img-placeholder.png');
+  background-image: url("images/Img-placeholder.png");
   height: 386px;
   display: flex;
   flex-direction: column;
@@ -232,7 +249,7 @@ nav .logo:hover {
 }
 
 .card-title {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-weight: normal;
   font-size: 32px;
   line-height: 44px;
@@ -240,14 +257,13 @@ nav .logo:hover {
 }
 
 .card-technologies {
-  display: flex;
-  flex-wrap: wrap;
-  grid-gap: 12px;
   margin: 12px 0 22px 0;
 }
 
 .card-technologies li {
-  font-family: 'Inter', sans-serif;
+  float: left;
+  margin-right: 20px;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
@@ -255,6 +271,14 @@ nav .logo:hover {
   text-align: center;
   padding: 10px 12px;
   background-color: #ffffff3d;
+}
+
+.card-technologies li::after {
+  clear: both;
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
 }
 
 .project-card button {
@@ -265,7 +289,7 @@ nav .logo:hover {
 /* About me section */
 .about-section {
   background-color: #1c1a19;
-  padding: 120px 24px 200px 24px;
+  padding: 120px 24px 100px 24px;
   display: flex;
   flex-direction: column;
   grid-row-gap: 24px;
@@ -273,7 +297,7 @@ nav .logo:hover {
 }
 
 .about-section h2 {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   color: #ff6b00;
   font-size: 72px;
   line-height: 88px;
@@ -304,7 +328,7 @@ nav .logo:hover {
 }
 
 .about-me-content ul li {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 22px;
   line-height: 43px;
   color: #fff;
@@ -312,7 +336,7 @@ nav .logo:hover {
 }
 
 .about-me-content h1 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #fff;
   font-weight: bold;
   font-size: 32px;
@@ -322,6 +346,93 @@ nav .logo:hover {
 
 .about-me-content h1 span {
   color: #ff6b00;
+}
+
+/* Footer */
+footer {
+  padding-top: 120px;
+}
+
+.footer-header {
+  font-family: "Inter", sans-serif;
+  color: #172b4d;
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  padding: 0 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-fields {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-row-gap: 35px;
+}
+
+.form-field {
+  width: 87%;
+}
+
+.form-field input {
+  padding: 14px 16px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  font-size: 15px;
+  line-height: 24px;
+  border-radius: 5px;
+}
+
+.form-field textarea {
+  background-color: #fbf8f7;
+  width: 100%;
+  padding: 12px;
+  min-height: 100px;
+  min-width: 100%;
+  max-width: 100%;
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  border: none;
+}
+
+.form-field textarea::placeholder {
+  color: #3c3a39;
+}
+
+.form-btn {
+  margin-top: 24px;
+}
+
+.social-links {
+  padding-top: 25px;
+  padding-bottom: 36px;
+  margin-top: 124px;
+  border-top: 1px solid #dfe1e6;
+}
+
+.footer-social-media-icons {
+  display: flex;
+  justify-content: center;
+  grid-row-gap: 20px;
+}
+
+.social-media-link {
+  margin: 0 10px;
+}
+
+.footer-social-media-icons img {
+  filter: invert(85%);
 }
 
 @media all and (max-width: 370px) {

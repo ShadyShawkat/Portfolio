@@ -218,7 +218,11 @@
           contact me.
         </p>
         <button type="button" class="btn">Get My Resume</button>
-        <img class="partial-about-me-bg-img" src="images/illustration-about-me-mobile.png" alt="Partial about me bg image">
+        <img
+          class="partial-about-me-bg-img"
+          src="images/illustration-about-me-mobile.png"
+          alt="Partial about me bg image"
+        />
 
         <ul class="about-me-content">
           <li class="languages">
@@ -251,8 +255,58 @@
             </ul>
           </li>
         </ul>
-
       </section>
     </main>
+
+    <footer>
+      <h2 class="footer-header">
+        I'm always interested in hearing about new projects, so if you'd like to
+        chat please get in touch.
+      </h2>
+
+      <form action="https://formspree.io/f/xqkwonpa" method="POST">
+        <ul class="form-fields">
+          <li class="form-field">
+            <input type="text" name="name" minlength="3" maxlength="30" required placeholder="Full name">
+          </li>
+          <li class="form-field">
+            <input type="email" name="email" required placeholder="Email address">
+          </li>
+          <li class="form-field">
+            <textarea name="message" maxlength="500" required placeholder="Enter text here"></textarea>
+          </li>
+        </ul>
+        <button type="submit" class="btn form-btn">Get in touch</button>
+      </form>
+      <div class="social-links">
+        <ul class="footer-social-media-icons">
+          <li class="social-media-link">
+            <a href="#">
+              <img src="images/Github-icon.svg" alt="Github icon" />
+            </a>
+          </li>
+          <li class="social-media-link">
+            <a href="#">
+              <img src="images/Linkedin-icon.svg" alt="Linkedin icon" />
+            </a>
+          </li>
+          <li class="social-media-link">
+            <a href="#">
+              <img src="images/Angelist-icon.svg" alt="Angelist icon" />
+            </a>
+          </li>
+          <li class="social-media-link">
+            <a href="#">
+              <img src="images/Twitter-icon.svg" alt="Twitter icon" />
+            </a>
+          </li>
+          <li class="social-media-link">
+            <a href="#">
+              <img src="images/Medium-icon.svg" alt="Medium icon" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
