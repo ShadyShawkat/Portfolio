@@ -157,7 +157,7 @@ nav .logo:hover {
   display: flex;
 }
 
-.social-media-icons a {
+.social-media-anchor-header {
   margin: 0 15px;
 }
 
@@ -196,7 +196,7 @@ nav .logo:hover {
 }
 
 .projects-section-header > hr {
-  height: 0px;
+  height: 0;
   border: 0;
   border-top: 1px solid #212121;
   background-color: #212121;
@@ -346,10 +346,10 @@ nav .logo:hover {
 }
 
 .about-section > hr {
-  height: 0px;
+  height: 0;
   border: 0;
   border-top: 1px solid #fff;
-  margin: 0px 24px 135px 24px;
+  margin: 0 24px 135px 24px;
 }
 
 .about-me-content {
@@ -425,7 +425,7 @@ form {
 
 .form-fields li:nth-child(1),
 .form-fields li:nth-child(2) {
-  width: 47.5%;
+  width: 47%;
   display: none;
 }
 
@@ -444,6 +444,7 @@ form {
   width: 100%;
   padding: 12px;
   min-height: 100px;
+
   /* min-width: 100%;
   max-width: 100%; */
   font-family: "Inter", sans-serif;
@@ -484,7 +485,7 @@ form {
   }
 }
 
-@media only screen and (min-width:1024px) {
+@media only screen and (min-width: 1024px) {
   /* Nav */
   nav {
     padding: 16px 10%;
@@ -540,32 +541,32 @@ form {
 
   /* Projects section */
   .projects-section {
-    padding: 0 3vw 120px 3vw;
+    padding: 0 40px 120px 40px;
   }
-  
+
   .projects-section-header {
     flex-direction: row;
     justify-content: flex-start;
     margin-bottom: 114px;
   }
-  
+
   .projects-section-header > h2 {
     margin-bottom: 0;
   }
-  
+
   .projects-section-header > hr {
     flex: 1;
   }
-  
+
   .projects-cards {
-    grid-template-rows: 448px, repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
   }
-  
+
   /* Most recent project */
   .most-recent-project {
     grid-column: 1/4;
     flex-direction: row;
+
     /* min-height: 300px */
   }
 
@@ -585,12 +586,12 @@ form {
     grid-gap: 8px;
     flex: 25vw;
   }
-  
+
   .most-recent-project-info h3 {
     font-size: 40px;
     line-height: 40px;
   }
-  
+
   .most-recent-project-info p {
     font-size: 17px;
     line-height: 28px;
@@ -607,96 +608,96 @@ form {
 
   .card-content {
     padding: 8px 16px;
-  } 
-  
+  }
+
   .card-content > * {
-    margin-bottom: 12px
+    margin-bottom: 12px;
   }
 
   .card-technologies {
     margin-top: 0;
   }
 
-  .project-card button {
+  .see-project-btn {
     visibility: hidden;
   }
 
-/* About me section */
-.about-section {
-  background-image: url("images/illustration-about-me-desktop.png");
-  background-repeat: no-repeat;
-  background-position: 100% 5%;
-  padding: 0 8%;
-}
+  /* About me section */
+  .about-section {
+    background-image: url("images/illustration-about-me-desktop.png");
+    background-repeat: no-repeat;
+    background-position: 100% 5%;
+    padding: 0 8%;
+  }
 
-.about-section-header {
-  background-image: none;
-  width: 43%;
-  padding: 130px 24px;
-}
+  .about-section-header {
+    background-image: none;
+    width: 43%;
+    padding: 130px 24px;
+  }
 
-.about-section-header h2 {
-  align-self: flex-start;
-}
+  .about-section-header h2 {
+    align-self: flex-start;
+  }
 
-.about-me-content {
-  text-align: start;
-  flex-direction: row;
-  grid-column-gap: 13%;
-}
+  .about-me-content {
+    text-align: start;
+    flex-direction: row;
+    grid-column-gap: 13%;
+  }
 
-.about-me-content h1 {
-  margin-left: 0;
-}
+  .about-me-content h1 {
+    margin-left: 0;
+  }
 
-/* Footer */
-footer {
-  padding: 130px 8% 0 8%;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+  /* Footer */
+  footer {
+    padding: 130px 8% 0 8%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-.footer-header {
-  text-align: start;
-  font-size: 40px;
-  line-height: 52px;
-  padding: 0;
-  width: 45%;
-}
+  .footer-header {
+    text-align: start;
+    font-size: 40px;
+    line-height: 52px;
+    padding: 0;
+    width: 45%;
+  }
 
-form {
-  flex: 1;
-  flex-wrap: wrap;
-}
+  form {
+    flex: 1;
+    flex-wrap: wrap;
+  }
 
-.form-fields {
-  margin-top: 0;
-  grid-gap: 24px;
-  flex-direction: row;
-}
+  .form-fields {
+    margin-top: 0;
+    grid-gap: 24px;
+    flex-direction: row;
+  }
 
-.form-fields li:nth-child(1),
-.form-fields li:nth-child(2) {
-  display: block;
-}
+  .form-fields li:nth-child(1),
+  .form-fields li:nth-child(2) {
+    display: block;
+  }
 
-.form-fields li:nth-child(3) {
-  display: none;
-}
+  .form-fields li:nth-child(3) {
+    display: none;
+  }
 
-.form-field {
-  width: 100%;
-}
+  .form-field {
+    width: 100%;
+  }
 
-.form-field textarea {
-  min-height: 120px;
-}
+  .form-field textarea {
+    min-height: 120px;
+  }
 
-.form-btn {
-  align-self: flex-start;
-}
+  .form-btn {
+    align-self: flex-start;
+  }
 
-.social-links {
-  width: 100%;
-}
+  .social-links {
+    width: 100%;
+  }
 }
