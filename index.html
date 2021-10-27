@@ -30,6 +30,20 @@
     <header>
       <nav>
         <a href="#" class="logo">Shady Shawkat</a>
+        <ul class="nav-links">
+          <li>
+            <a href="#">Portfolio</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+            <a href="#"><i class="far fa-envelope"></i></a>
+          </li>
+        </ul>
         <div class="ddl-menu">
           <div></div>
           <div></div>
@@ -40,75 +54,85 @@
 
     <main>
       <section class="header">
-        <h2 class="header-title">
-          Hey There.<br />
-          I'm Shady
-        </h2>
-        <p class="primary-text">I’m a Software Developer</p>
+        <div>
+          <h2 class="header-title">
+            Hey There.<br />
+            I'm Shady
+          </h2>
+          <p class="primary-text">I’m a Software Developer</p>
 
-        <p class="txt-white">
-          I can help you build a product , feature or website Look through some
-          of my work and experience! If you like what you see and have a project
-          you need coded, don’t hestiate to contact me.
-        </p>
+          <p class="txt-white">
+            I can help you build a product , feature or website Look through some
+            of my work and experience! If you like what you see and have a project
+            you need coded, don’t hestiate to contact me.
+          </p>
+        </div>
 
         <ul class="social-media-icons">
           <li>
-            <a href="#">
+            <a class="social-media-anchor-header" href="#">
               <img src="images/Github-icon.svg" alt="Github icon" />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="social-media-anchor-header" href="#">
               <img src="images/Linkedin-icon.svg" alt="Linkedin icon" />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="social-media-anchor-header" href="#">
               <img src="images/Angelist-icon.svg" alt="Angelist icon" />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="social-media-anchor-header" href="#">
               <img src="images/Twitter-icon.svg" alt="Twitter icon" />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="social-media-anchor-header" href="#">
               <img src="images/Medium-icon.svg" alt="Medium icon" />
             </a>
           </li>
         </ul>
-
-        <img
-          class="partial-header-bg-img"
-          src="images/illustration-header-mobile.png"
-          alt="Partial background image"
-        />
       </section>
 
       <section class="projects-section">
-        <h2>My Recent Works</h2>
+        <div class="projects-section-header">
+          <h2>My Recent Works</h2>
+          <hr>
+        </div>
         <div class="projects-cards">
           <div class="most-recent-project">
-            <img
-              src="images/Most-recent-proj-img-disp.png"
+            <div class="most-recent-project-img-disp">
+              <img
+              class="most-recent-project-mobile-img"
+              src="images/Most-recent-proj-img-mobile-disp.png"
               alt="My most recent project display image"
-            />
-            <h3>Multi-Post Stories</h3>
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a standard
-              dummy text.
-            </p>
-            <ul class="technologies-used-list">
-              <li>css</li>
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-            <button type="button" class="btn">See Project</button>
+              />
+              <img
+                class="most-recent-project-desktop-img"
+                src="images/Most-recent-proj-img-desktop-disp.png"
+                alt="My most recent project display image"
+              />
+            </div>
+            
+            <div class="most-recent-project-info">
+              <h3>Multi-Post Stories</h3>
+              <p>
+                A daily selection of privately personalized reads; no accounts or
+                sign-ups required. has been the industry's standard dummy text
+                ever since the 1500s, when an unknown printer took a standard
+                dummy text.
+              </p>
+              <ul class="technologies-used-list">
+                <li>css</li>
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>Ruby</li>
+              </ul>
+              <button type="button" class="btn">See Project</button>
+            </div>
           </div>
 
           <div class="project-card">
@@ -124,7 +148,7 @@
                 <li>Ruby</li>
               </ul>
             </div>
-            <button type="button" class="btn">See Project</button>
+            <button type="button" class="btn see-project-btn">See Project</button>
           </div>
 
           <div class="project-card">
@@ -140,7 +164,7 @@
                 <li>Ruby</li>
               </ul>
             </div>
-            <button type="button" class="btn">See Project</button>
+            <button type="button" class="btn see-project-btn">See Project</button>
           </div>
 
           <div class="project-card">
@@ -156,7 +180,7 @@
                 <li>Ruby</li>
               </ul>
             </div>
-            <button type="button" class="btn">See Project</button>
+            <button type="button" class="btn see-project-btn">See Project</button>
           </div>
 
           <div class="project-card">
@@ -172,7 +196,7 @@
                 <li>Ruby</li>
               </ul>
             </div>
-            <button type="button" class="btn">See Project</button>
+            <button type="button" class="btn see-project-btn">See Project</button>
           </div>
 
           <div class="project-card">
@@ -188,7 +212,7 @@
                 <li>Ruby</li>
               </ul>
             </div>
-            <button type="button" class="btn">See Project</button>
+            <button type="button" class="btn see-project-btn">See Project</button>
           </div>
 
           <div class="project-card">
@@ -204,25 +228,24 @@
                 <li>Ruby</li>
               </ul>
             </div>
-            <button type="button" class="btn">See Project</button>
+            <button type="button" class="btn see-project-btn">See Project</button>
           </div>
         </div>
       </section>
 
       <section class="about-section">
-        <h2>About me</h2>
-        <p class="txt-white">
-          Hello I’m a software developer! I can help you build a product ,
-          feature or website Look through some of my work and experience! If you
-          like what you see and have a project you need coded, don’t hestiate to
-          contact me.
-        </p>
-        <button type="button" class="btn">Get My Resume</button>
-        <img
-          class="partial-about-me-bg-img"
-          src="images/illustration-about-me-mobile.png"
-          alt="Partial about me bg image"
-        />
+        <div class="about-section-header">
+          <h2>About me</h2>
+          <p class="txt-white">
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If you
+            like what you see and have a project you need coded, don’t hestiate to
+            contact me.
+          </p>
+          <button type="button" class="btn">Get My Resume</button>
+        </div>
+
+        <hr>
 
         <ul class="about-me-content">
           <li class="languages">
@@ -267,6 +290,12 @@
       <form action="https://formspree.io/f/xqkwonpa" method="POST">
         <ul class="form-fields">
           <li class="form-field">
+            <input type="text" name="name" minlength="3" maxlength="30" required placeholder="First name">
+          </li>
+          <li class="form-field">
+            <input type="text" name="name" minlength="3" maxlength="30" required placeholder="Last name">
+          </li>
+          <li class="form-field">
             <input type="text" name="name" minlength="3" maxlength="30" required placeholder="Full name">
           </li>
           <li class="form-field">
@@ -281,32 +310,33 @@
       <div class="social-links">
         <ul class="footer-social-media-icons">
           <li class="social-media-link">
-            <a href="#">
+            <a class="social-media-anchor-footer" href="#">
               <img src="images/Github-icon.svg" alt="Github icon" />
             </a>
           </li>
           <li class="social-media-link">
-            <a href="#">
+            <a class="social-media-anchor-footer" href="#">
               <img src="images/Linkedin-icon.svg" alt="Linkedin icon" />
             </a>
           </li>
           <li class="social-media-link">
-            <a href="#">
+            <a class="social-media-anchor-footer" href="#">
               <img src="images/Angelist-icon.svg" alt="Angelist icon" />
             </a>
           </li>
           <li class="social-media-link">
-            <a href="#">
+            <a class="social-media-anchor-footer" href="#">
               <img src="images/Twitter-icon.svg" alt="Twitter icon" />
             </a>
           </li>
           <li class="social-media-link">
-            <a href="#">
+            <a class="social-media-anchor-footer" href="#">
               <img src="images/Medium-icon.svg" alt="Medium icon" />
             </a>
           </li>
         </ul>
       </div>
     </footer>
+    <script src="https://kit.fontawesome.com/a8ab9db749.js" crossorigin="anonymous"></script>
   </body>
 </html>
