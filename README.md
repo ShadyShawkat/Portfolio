@@ -2,8 +2,6 @@
 
 # Portfolio
 
-
-
 > This project represents my personal portfolio and will feature my personal info my most recent work and projects.
 
 ![screenshot](./app_screenshot.png)
