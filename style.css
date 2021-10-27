@@ -416,13 +416,16 @@ form {
   flex-direction: column;
   align-items: center;
   grid-gap: 35px;
+  flex-wrap: wrap;
 }
 
 .form-field {
   width: 87%;
 }
 
-.form-fields li:nth-child(1) {
+.form-fields li:nth-child(1),
+.form-fields li:nth-child(2) {
+  width: 47.5%;
   display: none;
 }
 
@@ -437,11 +440,12 @@ form {
 
 .form-field textarea {
   background-color: #fbf8f7;
+  resize: vertical;
   width: 100%;
   padding: 12px;
   min-height: 100px;
-  min-width: 100%;
-  max-width: 100%;
+  /* min-width: 100%;
+  max-width: 100%; */
   font-family: "Inter", sans-serif;
   font-weight: normal;
   font-size: 15px;
@@ -536,7 +540,7 @@ form {
 
   /* Projects section */
   .projects-section {
-    padding: 0 8% 120px 8%;
+    padding: 0 3vw 120px 3vw;
   }
   
   .projects-section-header {
@@ -627,7 +631,7 @@ form {
 
 .about-section-header {
   background-image: none;
-  width: 40%;
+  width: 43%;
   padding: 130px 24px;
 }
 
@@ -643,5 +647,56 @@ form {
 
 .about-me-content h1 {
   margin-left: 0;
+}
+
+/* Footer */
+footer {
+  padding: 130px 8% 0 8%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.footer-header {
+  text-align: start;
+  font-size: 40px;
+  line-height: 52px;
+  padding: 0;
+  width: 45%;
+}
+
+form {
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.form-fields {
+  margin-top: 0;
+  grid-gap: 24px;
+  flex-direction: row;
+}
+
+.form-fields li:nth-child(1),
+.form-fields li:nth-child(2) {
+  display: block;
+}
+
+.form-fields li:nth-child(3) {
+  display: none;
+}
+
+.form-field {
+  width: 100%;
+}
+
+.form-field textarea {
+  min-height: 120px;
+}
+
+.form-btn {
+  align-self: flex-start;
+}
+
+.social-links {
+  width: 100%;
 }
 }
