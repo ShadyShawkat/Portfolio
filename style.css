@@ -616,4 +616,32 @@ form {
   .project-card button {
     visibility: hidden;
   }
+
+/* About me section */
+.about-section {
+  background-image: url("images/illustration-about-me-desktop.png");
+  background-repeat: no-repeat;
+  background-position: 100% 5%;
+  padding: 0 8%;
+}
+
+.about-section-header {
+  background-image: none;
+  width: 40%;
+  padding: 130px 24px;
+}
+
+.about-section-header h2 {
+  align-self: flex-start;
+}
+
+.about-me-content {
+  text-align: start;
+  flex-direction: row;
+  grid-column-gap: 13%;
+}
+
+.about-me-content h1 {
+  margin-left: 0;
+}
 }
