@@ -602,6 +602,21 @@ form {
     height: 435px;
   }
 
+  .project-card:hover {
+    animation-name: zoom;
+    animation-duration: 1s;
+  }
+
+  @keyframes zoom {
+    from {
+      background-size: 110%;
+    }
+
+    to {
+      background-size: 150%;
+    }
+  }
+
   .project-card:hover button {
     visibility: visible;
   }
