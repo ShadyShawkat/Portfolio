@@ -617,11 +617,6 @@ form {
     }
   }
 
-  .project-card:hover {
-    background-size: 130%;
-    /* background-position: center; */
-  }
-
   .project-card:hover button {
     visibility: visible;
   }
