@@ -600,21 +600,12 @@ form {
   /* Project card */
   .project-card {
     height: 435px;
+    transition: transform 1s;
   }
 
   .project-card:hover {
-    animation-name: zoom;
-    animation-duration: 1s;
-  }
-
-  @keyframes zoom {
-    from {
-      background-size: 110%;
-    }
-
-    to {
-      background-size: 150%;
-    }
+    /* background-size: 130%; */
+    transform: scale(1.05);
   }
 
   .project-card:hover button {
