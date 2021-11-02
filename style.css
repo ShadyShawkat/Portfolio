@@ -12,7 +12,7 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
-  background-color: #ff6b00;
+  background-color: #c75300;
   letter-spacing: 0.03em;
   border: none;
   text-align: center;
@@ -22,6 +22,7 @@
 .btn:hover {
   color: #f55800;
   background-color: #fff5e1;
+  border: 1px solid #f55800;
   cursor: pointer;
 }
 
@@ -269,7 +270,7 @@ nav .logo:hover {
 
 /* Project card */
 .project-card {
-  background-image: url("images/Img-placeholder.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Img-placeholder.png");
   background-size: cover;
   height: 386px;
   display: flex;
@@ -371,7 +372,7 @@ nav .logo:hover {
   margin: 15px 0;
 }
 
-.about-me-content h1 {
+.about-me-content h3 {
   font-family: "Inter", sans-serif;
   color: #fff;
   font-weight: bold;
@@ -380,7 +381,7 @@ nav .logo:hover {
   margin-left: -40px;
 }
 
-.about-me-content h1 span {
+.about-me-content h3 span {
   color: #ff6b00;
 }
 
@@ -652,7 +653,7 @@ form {
     grid-column-gap: 13%;
   }
 
-  .about-me-content h1 {
+  .about-me-content h3 {
     margin-left: 0;
   }
 
