@@ -371,7 +371,7 @@ nav .logo:hover {
   margin: 15px 0;
 }
 
-.about-me-content h1 {
+.about-me-content h3 {
   font-family: "Inter", sans-serif;
   color: #fff;
   font-weight: bold;
@@ -380,7 +380,7 @@ nav .logo:hover {
   margin-left: -40px;
 }
 
-.about-me-content h1 span {
+.about-me-content h3 span {
   color: #ff6b00;
 }
 
@@ -652,7 +652,7 @@ form {
     grid-column-gap: 13%;
   }
 
-  .about-me-content h1 {
+  .about-me-content h3 {
     margin-left: 0;
   }
 
