@@ -12,7 +12,7 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
-  background-color: #ff6b00;
+  background-color: #c75300;
   letter-spacing: 0.03em;
   border: none;
   text-align: center;
@@ -269,7 +269,7 @@ nav .logo:hover {
 
 /* Project card */
 .project-card {
-  background-image: url("images/Img-placeholder.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Img-placeholder.png");
   background-size: cover;
   height: 386px;
   display: flex;
