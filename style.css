@@ -141,6 +141,42 @@ nav .logo:hover {
   line-height: 64px;
   letter-spacing: 0.37px;
   color: #ff6b00;
+  width: fit-content;
+
+
+  display:flex;
+  flex-direction: column;
+
+}
+
+.header-title span {
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  /* transform: translateY(-50%); */
+  border-right: 3px solid #ff6b00bf;
+  /* margin: 0 auto; */
+}
+
+/* Header animation */
+.anim-typewriter span:nth-child(1){
+  animation: typewriter 750ms steps(10) 1s 1 normal both,
+             blinkTextCursor 700ms steps(30) infinite normal
+}
+
+.anim-typewriter span:nth-child(2){
+  animation: typewriter 750ms steps(10) 3s 1 normal both,
+             blinkTextCursor 700ms steps(30) 2s infinite normal
+}
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 100%;}
+}
+
+@keyframes blinkTextCursor{
+  from{border-right-color: #ff6b00bf;}
+  to{border-right-color: transparent;}
 }
 
 .primary-text {
