@@ -1,3 +1,9 @@
+/* Fonts imports */
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
+
 /* Box sizing */
 * {
   box-sizing: border-box;
@@ -7,7 +13,7 @@
 
 /* general styles */
 .btn {
-  padding: 12px;
+  padding: 13px;
   font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 17px;
@@ -20,6 +26,7 @@
 }
 
 .btn:hover {
+  padding: 12px;
   color: #f55800;
   background-color: #fff5e1;
   border: 1px solid #f55800;
@@ -134,7 +141,7 @@ nav .logo:hover {
 }
 
 .header-title {
-  font-family: "Crete Round", serif;
+  font-family: "Crete Round", serif, monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 56px;
@@ -150,12 +157,10 @@ nav .logo:hover {
 }
 
 .header-title span {
+  padding-bottom: 3px;
   overflow: hidden;
   position: relative;
   white-space: nowrap;
-  /* transform: translateY(-50%); */
-  border-right: 3px solid #ff6b00bf;
-  /* margin: 0 auto; */
 }
 
 /* Header animation */
@@ -165,21 +170,11 @@ nav .logo:hover {
 }
 
 .anim-typewriter span:nth-child(2){
-  animation: typewriter 750ms steps(10) 3s 1 normal both,
+  animation: typewriter 750ms steps(10) 4s 1 normal both,
              blinkTextCursor 700ms steps(30) 2s infinite normal
 }
 
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 100%;}
-}
-
-@keyframes blinkTextCursor{
-  from{border-right-color: #ff6b00bf;}
-  to{border-right-color: transparent;}
-}
-
-.primary-text {
+.introductory-phrase {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -187,6 +182,24 @@ nav .logo:hover {
   line-height: 32px;
   color: #fff5e1;
   margin: 12px 0;
+  width: fit-content;
+  transform: translateX(3em);
+  opacity: 0;
+  animation: fadeInRight 2s 6s forwards;
+}
+
+.fadeInRightAnimation {
+  animation: fadeInRight 2s forwards;
+}
+
+.header-introductory-text {
+  transform: translatey(3em);
+  opacity: 0;
+  animation: fadeInUp 2s 6s forwards;
+}
+
+.fadeInUpAnimation {
+  animation: fadeInUp 2s forwards;
 }
 
 .social-media-icons {
@@ -368,7 +381,7 @@ nav .logo:hover {
   grid-row-gap: 24px;
 }
 
-.about-section-header h2 {
+.about-section-header > h2 {
   font-family: "Crete Round", serif;
   color: #ff6b00;
   font-size: 72px;
@@ -376,10 +389,19 @@ nav .logo:hover {
   letter-spacing: 0.37px;
   font-weight: normal;
   align-self: center;
+  transform: translateX(3em);
+  opacity: 0;
+}
+
+.about-me-text {
+
+  transform: translatey(3em);
+  opacity: 0;
 }
 
 .about-section-header button {
   width: fit-content;
+  z-index: 1;
 }
 
 .about-section > hr {
@@ -516,6 +538,7 @@ form {
   filter: invert(85%);
 }
 
+/* Media queries */
 @media only screen and (max-width: 370px) {
   .header {
     background-image: none;
@@ -558,7 +581,7 @@ form {
     line-height: 81px;
   }
 
-  .primary-text {
+  .introductory-phrase {
     font-size: 32px;
     line-height: 44px;
     font-weight: 500;
@@ -613,6 +636,11 @@ form {
 
   .most-recent-project-desktop-img {
     display: block;
+    transform: scale(0.5);
+  }
+
+  .scaleUpAnimations {
+    animation: scaleUp 1s forwards;
   }
 
   .most-recent-project-img-disp {
@@ -636,13 +664,14 @@ form {
 
   /* Project card */
   .project-card {
+    transform: scale(0.5);
     height: 435px;
-    transition: transform 1s;
+    /* transition: transform 1s; */
   }
 
   .project-card:hover {
     /* background-size: 130%; */
-    transform: scale(1.05);
+    transform: scale(1.05) !important;
   }
 
   .project-card:hover button {
@@ -742,5 +771,43 @@ form {
 
   .social-links {
     width: 100%;
+  }
+}
+
+/* Animation keyframes */
+@keyframes typewriter{
+  from{width: 0;}
+  99.89% {
+    width: 100%;
+  }
+  to{width: max-content;}
+}
+
+@keyframes blinkTextCursor{
+  from{border-right-color: #ff6b00bf;}
+  to{border-right-color: transparent;}
+}
+
+@keyframes fadeInRight {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  80% {
+    transform: scale(1.05);
+  }
+
+  to {
+    transform: scale(1);
   }
 }
