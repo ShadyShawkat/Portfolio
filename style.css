@@ -53,7 +53,17 @@ a {
   text-decoration: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* Navbar */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 nav {
   background-color: #3c3a39;
   display: flex;
@@ -61,9 +71,6 @@ nav {
   padding-right: 35px;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1;
 }
 
 nav .logo {
@@ -115,6 +122,30 @@ nav .logo:hover {
 
 .ddl-menu:hover {
   cursor: pointer;
+}
+
+.popup-menu {
+  background: #3c3a39;
+  position: fixed;
+  transition: transform 0.75s ease-in-out;
+  transform: translateX(100%);
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 5vw;
+}
+
+.open-menu {
+  transform: translateX(0%);
+}
+
+.close-menu {
+  color: #67798e;
+  border: none;
+  background-color: #3c3a39;
+  align-self: flex-end;
 }
 
 /* Main content */
