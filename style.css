@@ -62,6 +62,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
+  display: block;
 }
 
 nav {
@@ -135,6 +136,8 @@ nav .logo:hover {
   display: flex;
   flex-direction: column;
   padding: 5vw;
+  z-index: 300;
+  top: 0;
 }
 
 .open-menu {
