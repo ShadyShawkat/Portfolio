@@ -255,14 +255,14 @@ nav .logo:hover {
 
 .projects-cards {
   display: grid;
-  grid-gap: 24px;
+  grid-gap: 3vw;
 }
 
 /* Most recent project */
 .most-recent-project {
   display: flex;
   flex-direction: column;
-  grid-gap: 24px;
+  grid-gap: 3vw;
 }
 
 .most-recent-project-img-disp img {
@@ -277,6 +277,8 @@ nav .logo:hover {
   display: flex;
   flex-direction: column;
   grid-gap: 12px;
+  transform: translateX(3em);
+  opacity: 0;
 }
 
 .most-recent-project-info h3 {
@@ -321,7 +323,6 @@ nav .logo:hover {
 .project-card {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Img-placeholder.png");
   background-size: cover;
-  height: 386px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -394,7 +395,6 @@ nav .logo:hover {
 }
 
 .about-me-text {
-
   transform: translatey(3em);
   opacity: 0;
 }
@@ -601,7 +601,7 @@ form {
 
   /* Projects section */
   .projects-section {
-    padding: 0 40px 120px 40px;
+    padding: 0 10vw 120px 10vw;
   }
 
   .projects-section-header {
@@ -619,7 +619,7 @@ form {
   }
 
   .projects-cards {
-    grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
+    grid-template: auto auto auto/1fr 1fr 1fr;
   }
 
   /* Most recent project */

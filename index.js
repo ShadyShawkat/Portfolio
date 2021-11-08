@@ -22,20 +22,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Projects section animations
   let options = {};
-  let projects = document.querySelectorAll(".most-recent-project-desktop-img, .project-card, .about-me-text");
+  let projects = document.querySelectorAll(".most-recent-project, .project-card, .about-me-text");
   let observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if(entry.isIntersecting) {
         if(entry.target.classList.contains('about-me-text')) {
           document.querySelector('.about-section-header > h2').classList.add('fadeInRightAnimation');
           document.querySelector('.about-me-text').classList.add('fadeInUpAnimation');
+        } else if(entry.target.classList.contains('most-recent-project')) {
+          document.querySelector('.most-recent-project-desktop-img').classList.add('scaleUpAnimations');
+          document.querySelector('.most-recent-project-info').classList.add('fadeInRightAnimation');
         } else {
           entry.target.classList.add('scaleUpAnimations');
         }
-      } 
-      // else {
-      //   entry.target.classList.remove('scaleUpAnimations');
-      // }
+      }
     })
   }, options);
 
