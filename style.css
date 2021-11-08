@@ -6,6 +6,10 @@
 }
 
 /* general styles */
+html {
+  scroll-behavior: smooth;
+}
+
 .btn {
   padding: 12px;
   font-family: "Inter", sans-serif;
@@ -128,7 +132,7 @@ nav .logo:hover {
 .popup-menu {
   background: #3c3a39;
   position: fixed;
-  transition: transform 0.75s ease-in-out;
+  transition: transform 0.5s;
   transform: translateX(100%);
   z-index: 3;
   width: 100vw;
@@ -149,6 +153,19 @@ nav .logo:hover {
   border: none;
   background-color: #3c3a39;
   align-self: flex-end;
+  font-size: 25px;
+}
+
+.popup-menu li {
+  padding: 15px;
+  border-bottom: 1px solid #6f6c6b;
+}
+
+.popup-menu a {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 /* Main content */
@@ -207,10 +224,9 @@ nav .logo:hover {
 
 /* Projects section */
 .projects-section {
-  margin-top: 120px;
   display: flex;
   flex-direction: column;
-  padding: 0 24px 120px 24px;
+  padding: 120px 24px 120px 24px;
 }
 
 .projects-section-header {
