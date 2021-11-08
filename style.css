@@ -134,7 +134,6 @@ nav .logo:hover {
   position: fixed;
   transition: transform 0.5s;
   transform: translateX(100%);
-  z-index: 3;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -161,7 +160,7 @@ nav .logo:hover {
   border-bottom: 1px solid #6f6c6b;
 }
 
-.popup-menu a {
+.menu-link {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 32px;
