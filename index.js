@@ -61,7 +61,7 @@ const projects = [
 
 window.addEventListener('DOMContentLoaded', () => {
   projects.forEach((project) => {
-    let div = document.createElement('div');
+    const div = document.createElement('div');
     div.className = 'project-card';
     div.innerHTML = `<div class="project-card">
           <div class="card-content">
@@ -86,4 +86,23 @@ window.addEventListener('DOMContentLoaded', () => {
         openMenu();
       });
     });
+
+  const openButtons = document.querySelectorAll('.see-project-btn');
+  const modalContainer = document.querySelector('.modal-container');
+  const close = document.querySelector('.close-modal');
+
+  openButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      document.querySelector('body').style.overflow = 'hidden';
+      close.addEventListener('click', () => {
+        modalContainer.classList.remove('active-modal');
+      });
+      modalContainer.classList.add('active-modal');
+    });
+  });
+
+  close.addEventListener('click', () => {
+    modalContainer.classList.remove('active-modal');
+    document.querySelector('body').style.overflow = 'initial';
+  });
 });
