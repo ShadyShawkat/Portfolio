@@ -12,7 +12,7 @@ html {
 
 .btn {
   padding: 12px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
@@ -41,7 +41,7 @@ html {
 }
 
 .txt-white {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #fff;
   font-size: 16px;
   line-height: 24px;
@@ -80,7 +80,7 @@ nav {
 
 nav .logo {
   color: #fff;
-  font-family: "Segoe UI", "Roboto", sans-serif;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   padding: 10px 12px;
@@ -96,7 +96,7 @@ nav .logo:hover {
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .nav-links li {
@@ -161,7 +161,7 @@ nav .logo:hover {
 }
 
 .menu-link {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -172,7 +172,7 @@ nav .logo:hover {
 /* Header */
 .header {
   background-color: #1c1a19;
-  background-image: url("images/illustration-header-mobile.png");
+  background-image: url('images/illustration-header-mobile.png');
   background-repeat: no-repeat;
   background-position: 100% 220px;
   display: flex;
@@ -184,7 +184,7 @@ nav .logo:hover {
 }
 
 .header-title {
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 56px;
@@ -194,7 +194,7 @@ nav .logo:hover {
 }
 
 .primary-text {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -237,7 +237,7 @@ nav .logo:hover {
 }
 
 .projects-section-header > h2 {
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
@@ -280,7 +280,7 @@ nav .logo:hover {
 }
 
 .most-recent-project-info h3 {
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -289,7 +289,7 @@ nav .logo:hover {
 }
 
 .most-recent-project-info p {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #091e42;
@@ -303,7 +303,7 @@ nav .logo:hover {
 .technologies-used-list li {
   margin-right: 15px;
   margin-bottom: 10px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: bold;
   font-size: 15px;
   line-height: 20px;
@@ -319,7 +319,8 @@ nav .logo:hover {
 
 /* Project card */
 .project-card {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Img-placeholder.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('images/Img-placeholder.png');
   background-size: cover;
   height: 386px;
   display: flex;
@@ -334,7 +335,7 @@ nav .logo:hover {
 }
 
 .card-title {
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-weight: normal;
   font-size: 32px;
   line-height: 44px;
@@ -348,7 +349,7 @@ nav .logo:hover {
 
 .card-technologies li {
   margin-right: 20px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
@@ -371,7 +372,7 @@ nav .logo:hover {
 }
 
 .about-section-header {
-  background-image: url("images/illustration-about-me-mobile.png");
+  background-image: url('images/illustration-about-me-mobile.png');
   background-repeat: no-repeat;
   background-position: 100% 100%;
   padding: 120px 24px;
@@ -382,7 +383,7 @@ nav .logo:hover {
 }
 
 .about-section-header h2 {
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   color: #ff6b00;
   font-size: 72px;
   line-height: 88px;
@@ -414,7 +415,7 @@ nav .logo:hover {
 }
 
 .about-me-content ul li {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 22px;
   line-height: 43px;
   color: #fff;
@@ -422,7 +423,7 @@ nav .logo:hover {
 }
 
 .about-me-content h3 {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #fff;
   font-weight: bold;
   font-size: 32px;
@@ -443,7 +444,7 @@ footer {
 }
 
 .footer-header {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #172b4d;
   text-align: center;
   font-weight: bold;
@@ -497,7 +498,7 @@ form {
 
   /* min-width: 100%;
   max-width: 100%; */
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
@@ -558,7 +559,7 @@ form {
 
   /* Header */
   .header {
-    background-image: url("images/Illustration-header-desktop.png");
+    background-image: url('images/Illustration-header-desktop.png');
     background-position: 100% 0%;
     background-size: 50%;
     height: 798px;
@@ -587,6 +588,19 @@ form {
     width: 40%;
     font-size: 20px;
     line-height: 32px;
+  }
+
+  /* Modal */
+  .modal-container {
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(6px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    opacity: 1;
+    pointer-events: none;
   }
 
   /* Projects section */
@@ -680,7 +694,7 @@ form {
 
   /* About me section */
   .about-section {
-    background-image: url("images/illustration-about-me-desktop.png");
+    background-image: url('images/illustration-about-me-desktop.png');
     background-repeat: no-repeat;
     background-position: 100% 5%;
     padding: 0 8%;
