@@ -224,7 +224,7 @@ nav .logo:hover {
   justify-content: center;
   align-items: center;
   pointer-events: none;
-  backdrop-filter: blur(0px);
+  backdrop-filter: blur(0);
 }
 
 .modal-container.active-modal {
@@ -233,20 +233,19 @@ nav .logo:hover {
   backdrop-filter: blur(5px) brightness(50%);
 }
 
-.modal-container.active-modal .modal {
-  transform: translateY(0vh);
-}
-
 .modal {
   pointer-events: all;
   transition: transform 1s ease-out;
   transform: translateY(-400vh);
   width: 87.5vw;
-  height: fit-content;
   padding: 5vw;
   background-color: #fff;
   display: flex;
   flex-direction: column;
+}
+
+.modal-container.active-modal .modal {
+  transform: translateY(0);
 }
 
 .modal-header {
@@ -254,20 +253,20 @@ nav .logo:hover {
   justify-content: space-between;
 }
 
-.modal-header .close-modal {
+.close-modal {
   border: none;
   background: transparent;
   margin-right: 14px;
 }
 
-.modal .modal-img {
+.modal-img-container {
   overflow-y: hidden;
   max-height: 40vh;
   display: flex;
   align-items: center;
 }
 
-.modal .modal-img img {
+.modal-img {
   width: 100%;
 }
 
@@ -275,11 +274,11 @@ nav .logo:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  flex:1;
+  flex: 1;
 }
 
 .modal-info {
-  flex:1;
+  flex: 1;
   display: flex;
   flex-direction: column;
 }
@@ -298,7 +297,7 @@ nav .logo:hover {
   margin-top: auto;
 }
 
-.modal .modal-buttons button {
+.modal-button {
   min-width: 120px;
   max-width: 200px;
   flex-basis: 45%;
@@ -420,7 +419,8 @@ nav .logo:hover {
 
 /* Project card */
 .project-card {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("images/Img-placeholder.png");
   background-size: cover;
   height: 386px;
@@ -693,40 +693,37 @@ form {
 
   /* Modal */
   .modal {
-    height: fit-content;
     grid-row-gap: 1.5em;
     padding: 3vw;
   }
 
-  .modal .modal-img {
+  .modal-img-container {
     max-height: initial;
-    height: fit-content;
     flex: 7;
   }
-  
+
   .modal-body {
     flex-direction: row;
     grid-column-gap: 15px;
-    flex:initial;
+    flex: initial;
   }
-  
+
   .modal-info {
     flex: 4;
     justify-content: space-between;
-
   }
-  
+
   .modal-text {
     flex-basis: initial;
   }
-  
+
   .modal .modal-buttons {
     justify-content: flex-start;
     grid-column-gap: 15px;
     margin-top: 0;
   }
-  
-  .modal .modal-buttons button {
+
+  .modal-button {
     padding-left: 10px;
   }
 
