@@ -12,7 +12,7 @@ html {
 
 .btn {
   padding: 12px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
@@ -41,7 +41,7 @@ html {
 }
 
 .txt-white {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fff;
   font-size: 16px;
   line-height: 24px;
@@ -80,7 +80,7 @@ nav {
 
 nav .logo {
   color: #fff;
-  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  font-family: "Segoe UI", "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
   padding: 10px 12px;
@@ -96,7 +96,7 @@ nav .logo:hover {
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .nav-links li {
@@ -161,7 +161,7 @@ nav .logo:hover {
 }
 
 .menu-link {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -172,7 +172,7 @@ nav .logo:hover {
 /* Header */
 .header {
   background-color: #1c1a19;
-  background-image: url('images/illustration-header-mobile.png');
+  background-image: url("images/illustration-header-mobile.png");
   background-repeat: no-repeat;
   background-position: 100% 220px;
   display: flex;
@@ -184,7 +184,7 @@ nav .logo:hover {
 }
 
 .header-title {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 56px;
@@ -194,7 +194,7 @@ nav .logo:hover {
 }
 
 .primary-text {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -212,67 +212,113 @@ nav .logo:hover {
   margin: 0 15px;
 }
 
-.partial-header-bg-img {
-  height: 400px;
-  width: 150px;
-  position: absolute;
-  right: 0%;
-  top: 39%;
-  -webkit-user-drag: none;
+/* Modal */
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  backdrop-filter: blur(0px);
 }
 
-  /* Modal */
-  .modal-container {
-    width: 100vw;
-    height: 100vh;
-    backdrop-filter: blur(6px);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 500;
-    opacity: 0;
-    pointer-events: none;
-    display: grid;
-    place-items: center;
+.modal-container.active-modal {
+  pointer-events: all;
+  transition: backdrop-filter 1s ease-in-out;
+  backdrop-filter: blur(5px) brightness(50%);
+}
 
-  }
+.modal-container.active-modal .modal {
+  transform: translateY(0vh);
+}
 
-  .modal-container.active-modal {
-    opacity: 1;
-    pointer-events: auto;
-  }
+.modal {
+  pointer-events: all;
+  transition: transform 1s ease-out;
+  transform: translateY(-400vh);
+  width: 87.5vw;
+  height: fit-content;
+  padding: 5vw;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
 
-  .modal-container .modal  {
-    width: 94.5%;
-    height: 90%;
-    padding: 16px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    grid-row-gap: 20px
-  }
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+}
 
-  .modal-container .modal .modal-img {
-    width:100%;
-  }
+.modal-header .close-modal {
+  border: none;
+  background: transparent;
+  margin-right: 14px;
+}
 
-  .modal-container .modal .modal-buttons {
-    display: flex;
-    justify-content: space-between;
-  }
+.modal .modal-img {
+  overflow-y: hidden;
+  max-height: 40vh;
+  display: flex;
+  align-items: center;
+}
 
+.modal .modal-img img {
+  width: 100%;
+}
 
-  .modal-container .modal-header {
-    display: flex;
-    justify-content: space-between;
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex:1;
+}
 
-  }
+.modal-info {
+  flex:1;
+  display: flex;
+  flex-direction: column;
+}
 
-  .modal-container .modal-header .close-modal {
-    border: none;
-    background: transparent;
-    margin-right: 14px;
-  }
+.modal-text {
+  flex-basis: 20vh;
+  overflow-y: auto;
+  text-align: justify;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+.modal .modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.modal .modal-buttons button {
+  min-width: 120px;
+  max-width: 200px;
+  flex-basis: 45%;
+  text-align: initial;
+  font-size: 15px;
+  padding-left: 5vw;
+}
+
+.see-live-btn {
+  background-image: url(images/go-to-link-icon.png);
+  background-repeat: no-repeat;
+  background-position: 93% center;
+}
+
+.see-src-btn {
+  background-image: url(images/Github-icon.svg);
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-position: 93% center;
+}
 
 /* Projects section */
 .projects-section {
@@ -290,7 +336,7 @@ nav .logo:hover {
 }
 
 .projects-section-header > h2 {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
@@ -332,8 +378,9 @@ nav .logo:hover {
   grid-gap: 12px;
 }
 
-.most-recent-project-info h3 {
-  font-family: 'Crete Round', serif;
+.most-recent-project-info h3,
+.modal-title {
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -341,8 +388,9 @@ nav .logo:hover {
   color: #091e42;
 }
 
-.most-recent-project-info p {
-  font-family: 'Inter', sans-serif;
+.most-recent-project-info p,
+.modal-text {
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #091e42;
@@ -356,7 +404,7 @@ nav .logo:hover {
 .technologies-used-list li {
   margin-right: 15px;
   margin-bottom: 10px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 15px;
   line-height: 20px;
@@ -373,7 +421,7 @@ nav .logo:hover {
 /* Project card */
 .project-card {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('images/Img-placeholder.png');
+    url("images/Img-placeholder.png");
   background-size: cover;
   height: 386px;
   display: flex;
@@ -388,7 +436,7 @@ nav .logo:hover {
 }
 
 .card-title {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   font-weight: normal;
   font-size: 32px;
   line-height: 44px;
@@ -402,7 +450,7 @@ nav .logo:hover {
 
 .card-technologies li {
   margin-right: 20px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
@@ -425,7 +473,7 @@ nav .logo:hover {
 }
 
 .about-section-header {
-  background-image: url('images/illustration-about-me-mobile.png');
+  background-image: url("images/illustration-about-me-mobile.png");
   background-repeat: no-repeat;
   background-position: 100% 100%;
   padding: 120px 24px;
@@ -436,7 +484,7 @@ nav .logo:hover {
 }
 
 .about-section-header h2 {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   color: #ff6b00;
   font-size: 72px;
   line-height: 88px;
@@ -468,7 +516,7 @@ nav .logo:hover {
 }
 
 .about-me-content ul li {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 22px;
   line-height: 43px;
   color: #fff;
@@ -476,7 +524,7 @@ nav .logo:hover {
 }
 
 .about-me-content h3 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #fff;
   font-weight: bold;
   font-size: 32px;
@@ -497,7 +545,7 @@ footer {
 }
 
 .footer-header {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #172b4d;
   text-align: center;
   font-weight: bold;
@@ -551,7 +599,7 @@ form {
 
   /* min-width: 100%;
   max-width: 100%; */
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
@@ -612,7 +660,7 @@ form {
 
   /* Header */
   .header {
-    background-image: url('images/Illustration-header-desktop.png');
+    background-image: url("images/Illustration-header-desktop.png");
     background-position: 100% 0%;
     background-size: 50%;
     height: 798px;
@@ -641,6 +689,45 @@ form {
     width: 40%;
     font-size: 20px;
     line-height: 32px;
+  }
+
+  /* Modal */
+  .modal {
+    height: fit-content;
+    grid-row-gap: 1.5em;
+    padding: 3vw;
+  }
+
+  .modal .modal-img {
+    max-height: initial;
+    height: fit-content;
+    flex: 7;
+  }
+  
+  .modal-body {
+    flex-direction: row;
+    grid-column-gap: 15px;
+    flex:initial;
+  }
+  
+  .modal-info {
+    flex: 4;
+    justify-content: space-between;
+
+  }
+  
+  .modal-text {
+    flex-basis: initial;
+  }
+  
+  .modal .modal-buttons {
+    justify-content: flex-start;
+    grid-column-gap: 15px;
+    margin-top: 0;
+  }
+  
+  .modal .modal-buttons button {
+    padding-left: 10px;
   }
 
   /* Projects section */
@@ -691,7 +778,8 @@ form {
     flex: 25vw;
   }
 
-  .most-recent-project-info h3 {
+  .most-recent-project-info h3,
+  .modal-header h2 {
     font-size: 40px;
     line-height: 40px;
   }
@@ -734,7 +822,7 @@ form {
 
   /* About me section */
   .about-section {
-    background-image: url('images/illustration-about-me-desktop.png');
+    background-image: url("images/illustration-about-me-desktop.png");
     background-repeat: no-repeat;
     background-position: 100% 5%;
     padding: 0 8%;

@@ -87,13 +87,14 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-  const openButtons = document.querySelectorAll('.see-project-btn');
+  const openButtons = document.querySelectorAll('.see-project-btn, .most-recent-project-info button');
   const modalContainer = document.querySelector('.modal-container');
   const close = document.querySelector('.close-modal');
 
   openButtons.forEach((button) => {
     button.addEventListener('click', () => {
       document.querySelector('body').style.overflow = 'hidden';
+      document.querySelector('body').classList.add('blur');
       close.addEventListener('click', () => {
         modalContainer.classList.remove('active-modal');
       });
@@ -103,6 +104,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   close.addEventListener('click', () => {
     modalContainer.classList.remove('active-modal');
+    document.querySelector('body').classList.remove('blur');
     document.querySelector('body').style.overflow = 'initial';
   });
 });
