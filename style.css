@@ -695,10 +695,10 @@ form {
   .modal {
     grid-row-gap: 1.5em;
     padding: 3vw;
+    max-height: 90vh;
   }
 
   .modal-img-container {
-    max-height: initial;
     flex: 7;
   }
 
