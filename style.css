@@ -212,13 +212,111 @@ nav .logo:hover {
   margin: 0 15px;
 }
 
-.partial-header-bg-img {
-  height: 400px;
-  width: 150px;
-  position: absolute;
-  right: 0%;
-  top: 39%;
-  -webkit-user-drag: none;
+/* Modal */
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  backdrop-filter: blur(0);
+}
+
+.modal-container.active-modal {
+  pointer-events: all;
+  transition: backdrop-filter 1s ease-in-out;
+  backdrop-filter: blur(5px) brightness(50%);
+}
+
+.modal {
+  pointer-events: all;
+  transition: transform 1s ease-out;
+  transform: translateY(-400vh);
+  width: 87.5vw;
+  padding: 5vw;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-container.active-modal .modal {
+  transform: translateY(0);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.close-modal {
+  border: none;
+  background: transparent;
+  margin-right: 14px;
+}
+
+.modal-img-container {
+  overflow-y: hidden;
+  max-height: 40vh;
+  display: flex;
+  align-items: center;
+}
+
+.modal-img {
+  width: 100%;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.modal-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-text {
+  flex-basis: 20vh;
+  overflow-y: auto;
+  text-align: justify;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+.modal .modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.modal-button {
+  min-width: 120px;
+  max-width: 200px;
+  flex-basis: 45%;
+  text-align: initial;
+  font-size: 15px;
+  padding-left: 5vw;
+}
+
+.see-live-btn {
+  background-image: url(images/go-to-link-icon.png);
+  background-repeat: no-repeat;
+  background-position: 93% center;
+}
+
+.see-src-btn {
+  background-image: url(images/Github-icon.svg);
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-position: 93% center;
 }
 
 /* Projects section */
@@ -279,7 +377,8 @@ nav .logo:hover {
   grid-gap: 12px;
 }
 
-.most-recent-project-info h3 {
+.most-recent-project-info h3,
+.modal-title {
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: normal;
@@ -288,7 +387,8 @@ nav .logo:hover {
   color: #091e42;
 }
 
-.most-recent-project-info p {
+.most-recent-project-info p,
+.modal-text {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -319,7 +419,9 @@ nav .logo:hover {
 
 /* Project card */
 .project-card {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Img-placeholder.png");
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/Img-placeholder.png");
   background-size: cover;
   height: 386px;
   display: flex;
@@ -589,6 +691,42 @@ form {
     line-height: 32px;
   }
 
+  /* Modal */
+  .modal {
+    grid-row-gap: 1.5em;
+    padding: 3vw;
+    max-height: 90vh;
+  }
+
+  .modal-img-container {
+    flex: 7;
+  }
+
+  .modal-body {
+    flex-direction: row;
+    grid-column-gap: 15px;
+    flex: initial;
+  }
+
+  .modal-info {
+    flex: 4;
+    justify-content: space-between;
+  }
+
+  .modal-text {
+    flex-basis: initial;
+  }
+
+  .modal .modal-buttons {
+    justify-content: flex-start;
+    grid-column-gap: 15px;
+    margin-top: 0;
+  }
+
+  .modal-button {
+    padding-left: 10px;
+  }
+
   /* Projects section */
   .projects-section {
     padding: 0 40px 120px 40px;
@@ -637,7 +775,8 @@ form {
     flex: 25vw;
   }
 
-  .most-recent-project-info h3 {
+  .most-recent-project-info h3,
+  .modal-header h2 {
     font-size: 40px;
     line-height: 40px;
   }
