@@ -169,7 +169,7 @@
           <div class="modal">
             <div class="modal-header">
               <h2 class="modal-title">Multi Post Stories</h2>
-              <button class="close-modal"><i class="fas fa-times"></i></button> 
+              <button type="button" class="close-modal"><i class="fas fa-times"></i></button> 
             </div>
             <ul class="technologies-used-list">
               <li>css</li>
@@ -249,7 +249,7 @@
         chat please get in touch.
       </h2>
 
-      <form action="https://formspree.io/f/xqkwonpa" method="POST">
+      <form class="contact-form" action="https://formspree.io/f/xqkwonpa" method="POST">
         <ul class="form-fields">
           <li class="form-field">
             <input
@@ -287,6 +287,7 @@
               name="email"
               required
               placeholder="Email address"
+              pattern="^[a-z0-9]+@(.+)$"
             />
           </li>
           <li class="form-field">
@@ -298,6 +299,7 @@
             ></textarea>
           </li>
         </ul>
+        <span class="error-span"></span>
         <button type="submit" class="btn form-btn">Get in touch</button>
       </form>
       <div class="social-links">
