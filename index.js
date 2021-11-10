@@ -110,9 +110,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
   document.querySelector('.form-btn').addEventListener('click', (event) => {
     const email = document.querySelector(".contact-form input[type='email']");
-    const errorSpan = document.querySelector(".error-span");
-    if(email.validity.patternMismatch) {
-      errorSpan.textContent = 'Invalid email';
+    const errorSpan = document.querySelector('.error-span');
+    const emailInLowerCase = email.value.toLowerCase();
+    if (email.validity.patternMismatch) {
+      errorSpan.textContent = `Invalid email, This is your email in lower case: ${emailInLowerCase}`;
       event.preventDefault();
     } else {
       errorSpan.textContent = '';
