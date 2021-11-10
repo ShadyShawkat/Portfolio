@@ -574,7 +574,6 @@ form {
 .error-span {
   font-family: "Poppins", sans-serif;
   color: red;
-  align-self: flex-start;
   font-size: 20px;
   line-height: 24px;
   font-weight: 500;
@@ -874,6 +873,10 @@ form {
   form {
     flex: 1;
     flex-wrap: wrap;
+  }
+
+  .error-span {
+    align-self: flex-start;
   }
 
   .form-fields {
