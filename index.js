@@ -107,4 +107,15 @@ window.addEventListener('DOMContentLoaded', () => {
     document.querySelector('body').classList.remove('blur');
     document.querySelector('body').style.overflow = 'initial';
   });
+
+  document.querySelector('.form-btn').addEventListener('click', (event) => {
+    const email = document.querySelector(".contact-form input[type='email']");
+    const errorSpan = document.querySelector(".error-span");
+    if(email.validity.patternMismatch) {
+      errorSpan.textContent = 'Invalid email';
+      event.preventDefault();
+    } else {
+      errorSpan.textContent = '';
+    }
+  });
 });

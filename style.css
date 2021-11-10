@@ -571,6 +571,16 @@ form {
   flex-wrap: wrap;
 }
 
+.error-span {
+  font-family: "Poppins", sans-serif;
+  color: red;
+  align-self: flex-start;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
 .form-field {
   width: 87%;
 }
@@ -579,6 +589,7 @@ form {
 .form-fields li:nth-child(2) {
   width: 47%;
   display: none;
+  pointer-events: none;
 }
 
 .form-field input {
@@ -874,10 +885,12 @@ form {
   .form-fields li:nth-child(1),
   .form-fields li:nth-child(2) {
     display: block;
+    pointer-events: initial;
   }
 
   .form-fields li:nth-child(3) {
     display: none;
+    pointer-events: none;
   }
 
   .form-field {
