@@ -2,6 +2,14 @@ function openMenu() {
   document.querySelector('.popup-menu').classList.toggle('open-menu');
 }
 
+function persistFormData(element) {
+  element.addEventListener('input', () => {
+    const localFormData = JSON.parse(localStorage.getItem('localFormData'));
+    localFormData[element.name] = element.value;
+    localStorage.setItem('localFormData', JSON.stringify(localFormData));
+  });
+}
+
 const projects = [
   {
     name: 'Data Dashboard Healthcare',
@@ -60,6 +68,30 @@ const projects = [
 ];
 
 window.addEventListener('DOMContentLoaded', () => {
+  // Setting and getting form data from local storage
+  const form = document.querySelector('.contact-form');
+  let localFormData = JSON.parse(localStorage.getItem('localFormData'));
+
+  if (!localFormData) {
+    localFormData = {
+      firstName: '',
+      lastName: '',
+      fullName: '',
+      email: '',
+      message: '',
+    };
+    localStorage.setItem('localFormData', JSON.stringify(localFormData));
+  }
+
+  Object.keys(localFormData).forEach((el) => {
+    form[el].value = localFormData[el];
+  });
+
+  Object.keys(localFormData).forEach((el) => {
+    persistFormData(form.elements[el]);
+  });
+
+  // Rendering Prjects dynamically
   projects.forEach((project) => {
     const div = document.createElement('div');
     div.className = 'project-card';
@@ -79,6 +111,7 @@ window.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.projects-cards').appendChild(div);
   });
 
+  // Opening and closing menu
   document
     .querySelectorAll('.ddl-menu, .popup-menu a, .close-menu')
     .forEach((el) => {
@@ -87,7 +120,9 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-  const openButtons = document.querySelectorAll('.see-project-btn, .most-recent-project-info button');
+  const openButtons = document.querySelectorAll(
+    '.see-project-btn, .most-recent-project-info button',
+  );
   const modalContainer = document.querySelector('.modal-container');
   const close = document.querySelector('.close-modal');
 
@@ -108,6 +143,7 @@ window.addEventListener('DOMContentLoaded', () => {
     document.querySelector('body').style.overflow = 'initial';
   });
 
+  // Email form validation
   document.querySelector('.form-btn').addEventListener('click', (event) => {
     const email = document.querySelector(".contact-form input[type='email']");
     const errorSpan = document.querySelector('.error-span');
