@@ -6,18 +6,6 @@ function persistFormData(element) {
   element.addEventListener('input', () => {
     const localFormData = JSON.parse(localStorage.getItem('localFormData'));
     localFormData[element.name] = element.value;
-    if (
-      !localFormData.fullName
-      && localFormData.firstName
-      && localFormData.lastName
-    ) {
-      localFormData.fullName = `${localFormData.firstName} ${localFormData.lastName}`;
-    }
-    if (localFormData.fullName) {
-      const nameString = localFormData.fullName.split(' ');
-      localFormData['firstName'] = nameString[0];
-      localFormData['lastName'] = nameString[nameString.length - 1];
-    }
     localStorage.setItem('localFormData', JSON.stringify(localFormData));
   });
 }
