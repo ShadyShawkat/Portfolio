@@ -398,6 +398,7 @@ nav .logo:hover {
 
 .technologies-used-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .technologies-used-list li {
@@ -419,9 +420,6 @@ nav .logo:hover {
 
 /* Project card */
 .project-card {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/Img-placeholder.png");
   background-size: cover;
   height: 386px;
   display: flex;
