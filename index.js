@@ -113,8 +113,8 @@ window.addEventListener('DOMContentLoaded', () => {
               See Project
             </button>
           </div>`;
-          div.querySelector('.project-card').style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
-          url("${project.imageUrl}")`;
+    div.querySelector('.project-card').style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+    url("${project.imageUrl}")`;
     document.querySelector('.projects-cards').appendChild(div);
   });
 

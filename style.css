@@ -443,11 +443,12 @@ nav .logo:hover {
 
 .card-technologies {
   display: flex;
+  flex-wrap: wrap;
   margin: 12px 0 22px 0;
+  gap: 15px;
 }
 
 .card-technologies li {
-  margin-right: 20px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 15px;
@@ -743,7 +744,8 @@ form {
   .projects-section-header {
     flex-direction: row;
     justify-content: flex-start;
-    margin-bottom: 114px;
+    margin-bottom: 60px;
+    margin-top: 50px;
   }
 
   .projects-section-header > h2 {
